@@ -8,10 +8,12 @@ import android.view.View;
 import android.widget.CustomDigitalClock;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity
+{
 
 	@Override
-	public void onCreate(Bundle savedInstanceState) {
+	public void onCreate(Bundle savedInstanceState)
+	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
@@ -22,17 +24,19 @@ public class MainActivity extends Activity {
 
 		dc.setClickable(true);
 		dc.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				tv.setText(dc.getText().toString());
-				tv.setTextColor(Color.RED);
-			}
-		});
+				@Override
+				public void onClick(View v)
+				{
+					// TODO Auto-generated method stub
+					tv.setText(dc.getText().toString());
+					tv.setTextColor(Color.RED);
+				}
+			});
 	}
 
 	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
+	public boolean onCreateOptionsMenu(Menu menu)
+	{
 		getMenuInflater().inflate(R.menu.activity_main, menu);
 		return true;
 	}
