@@ -1,33 +1,52 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="@drawable/old_book_bkgnd" >"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/old_book_bkgnd"
+	style="@style/AppTheme">
 
-<TextView
-    android:id="@+id/textView1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentTop="true"
-    android:layout_centerHorizontal="true"
-    android:textSize="25sp" />
+	<TextView
+		android:id="@+id/textView1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:layout_margin="10dp"
+		android:textSize="25sp"
+		android:textColor="#00ff00"/>
 
-<DigitalClock
-    android:id="@+id/digitalClock1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/textView1"
-    android:layout_centerHorizontal="true"
-    android:text="DigitalClock"
-    android:textSize="25sp" />
+	<DigitalClock
+		android:id="@+id/digitalClock1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/textView1"
+		android:layout_centerHorizontal="true"
+		android:text="DigitalClock"
+		android:textSize="25sp"
+		android:textColor="#00ff00"/>
 
+	<Button
+		android:layout_height="wrap_content"
+		android:text="Freeze"
+		android:layout_width="wrap_content"
+		android:layout_below="@id/digitalClock1"
+		android:gravity="center"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/activitymainButton1"
+		android:textColor="#94FF3C"
+		android:typeface="sans"
+		android:onClick="btnClick"/>
 
-<CustomDigitalClock
-    android:id="@+id/fragment_clock_digital"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_centerHorizontal="true"
-    android:textSize="25sp"
-    android:typeface="monospace" />
+	<CustomDigitalClock
+		android:id="@+id/fragment_clock_digital"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:textSize="25sp"
+		android:typeface="monospace"
+		android:layout_marginTop="10dp"/>
 
 </RelativeLayout>
+

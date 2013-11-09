@@ -16,15 +16,15 @@
 
 package android.widget;
 
-import android.content.Context;
-import android.content.res.Resources;
-import android.database.ContentObserver;
-import android.os.Handler;
-import android.os.SystemClock;
-import android.provider.Settings;
-import android.text.format.DateFormat;
-import android.util.AttributeSet;
-import java.util.Calendar;
+import android.content.*;
+import android.content.res.*;
+import android.database.*;
+import android.graphics.*;
+import android.os.*;
+import android.provider.*;
+import android.text.format.*;
+import android.util.*;
+import java.util.*;
 
 /**
  * You have to make a clone of the file DigitalClock.java to use in your application, modify in the following manner:-
@@ -42,7 +42,7 @@ public class CustomDigitalClock extends TextView {
     private Runnable mTicker;
     private Handler mHandler;
 
-    private boolean mTickerStopped = false;
+    public boolean mTickerStopped = false;
 
     String mFormat;
 
@@ -84,6 +84,7 @@ public class CustomDigitalClock extends TextView {
                     if (mTickerStopped) return;
                     mCalendar.setTimeInMillis(System.currentTimeMillis());
                     setText(DateFormat.format(mFormat, mCalendar));
+					setTextColor(Color.GREEN);
                     invalidate();
                     long now = SystemClock.uptimeMillis();
                     long next = now + (1000 - now % 1000);

@@ -18,10 +18,11 @@ public final class R {
         public static final int old_book_bkgnd=0x7f020004;
     }
     public static final class id {
-        public static final int analogClock=0x7f080003;
+        public static final int activitymainButton1=0x7f080002;
+        public static final int analogClock=0x7f080004;
         public static final int digitalClock1=0x7f080001;
-        public static final int fragment_clock_digital=0x7f080002;
-        public static final int menu_settings=0x7f080004;
+        public static final int fragment_clock_digital=0x7f080003;
+        public static final int menu_settings=0x7f080005;
         public static final int textView1=0x7f080000;
     }
     public static final class layout {
