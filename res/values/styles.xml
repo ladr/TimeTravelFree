@@ -13,8 +13,7 @@
     </style>
 
     <!-- Application theme. -->
-    <style name="AppTheme" parent="AppBaseTheme"
-		android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+    <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
